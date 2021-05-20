@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tobi's Startseite</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="js/time.js"></script>
+</head>
+
+<body onload="get_greeting()" " >
+
+  <style>
+    body {  background-image: url('images/1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+  </style>
+
+    <!-- Insert greeting which depends on the actual time -->
+    <h1 id="greeting"></h1>
+
+    <!-- Button with Icon -->
+    <button class="changeImage" type="submit" onclick="change_backround()" style="border: 0; background: transparent"  >
+    <img src="images/photo_icon.jpg" width="30" height="15" alt="submit" />
+    </button>
+
+    <img class="google-logo" src="images/Google.png">
+
+    <form class="google-search" action="https://www.google.com/search" method="GET">
+      <input class="text-input" type="text" name="q" placeholder="Suchen..">
+      <input class="search-button" type="submit" value="Suchen">
+    </form>
+
+<!-- Change Backround -->
+  <script>
+    function change_backround() {
+      rand = Math.floor(Math.random() * 6)+1;
+      document.body.style.backgroundImage = "url('images/"+rand+".jpg')";
+      // document.getElementById("bg").src="images/"+rand+".jpg"
+    }
+  </script>
+
+
+</body>
+
+</html>

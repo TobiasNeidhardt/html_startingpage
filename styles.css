@@ -1,0 +1,42 @@
+#bg {
+  height: 800px;
+  width: 100%;
+}
+
+#greeting{
+  color: white;
+  font-size: 100;
+  font-weight:bolder;
+  text-align: center;
+}
+
+.changeImage{
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.google-search{
+  text-align: center;
+}
+
+.text-input{
+  width: 20%;
+  height: 20px;
+  border-radius:5px;
+  border: none;
+}
+
+.search-button{
+  border-radius:5px;
+  border: none;
+  background-color: green;
+  color: white;
+}
+
+.google-logo{
+  display: block;
+  margin: 20px auto;
+  height: 100px;
+}
