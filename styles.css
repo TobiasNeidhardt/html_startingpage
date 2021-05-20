@@ -22,9 +22,10 @@
 }
 
 .text-input{
+  background-color: rgba(255,255,255,0.5);
   width: 20%;
-  height: 20px;
-  border-radius:5px;
+  height: 30px;
+  border-radius:10px;
   border: none;
 }
 
@@ -37,6 +38,21 @@
 
 .google-logo{
   display: block;
-  margin: 20px auto;
+  margin: 80px auto 20px;
+  height: 150px;
+}
+
+.icon-button{
+  background-color: transparent;
+  border: none;
   height: 100px;
+  width: 100px;
+  margin-left: 1%;
+  margin-right: 1%;
+  border-radius: 100%;
+}
+
+.center-table{
+  text-align: center;
+  margin-top: 3%;
 }

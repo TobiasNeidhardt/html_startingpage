@@ -8,7 +8,7 @@
   <script src="js/time.js"></script>
 </head>
 
-<body onload="get_greeting()" " >
+<body onload="change_backround()" " >
 
   <style>
     body {  background-image: url('images/1.jpg');
@@ -33,14 +33,39 @@
       <input class="search-button" type="submit" value="Suchen">
     </form>
 
+<div class="center-table">
+  <table>
+    <tr>
+    <a href="https://github.com/"><button class="icon-button">
+    <img src="images/git.png" width="100" height="100" alt="submit" />
+    </button></a>
+
+    <a href="https://s01z.ucc.ovgu.de/remote_access#"><button class="icon-button">
+    <img src="images/sap.png" width="100" height="100" alt="submit" />
+    </button></a>
+
+    <a href="https://www.youtube.com/"><button class="icon-button">
+    <img src="images/youtube.png" width="100" height="100" alt="submit" />
+    </button></a>
+
+    <a href="https://mail.google.com/mail/u/0/#inbox"><button class="icon-button">
+    <img src="images/mail.png" width="100" height="100" alt="submit" />
+    </button></a>
+    </tr>
+  </table>
+</div>
+
+
 <!-- Change Backround -->
   <script>
     function change_backround() {
+      get_greeting();
       rand = Math.floor(Math.random() * 6)+1;
       document.body.style.backgroundImage = "url('images/"+rand+".jpg')";
       // document.getElementById("bg").src="images/"+rand+".jpg"
     }
   </script>
+
 
 
 </body>
