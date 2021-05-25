@@ -6,7 +6,7 @@ function get_greeting() {
     document.getElementById("greeting").innerHTML = "Guten Morgen Tobias!";
     document.getElementById("icon").src ="images/sunrice.png"
   }
-  else if (hours >11 && hours <18) {
+  else if (hours >11 && hours <=16) {
     document.getElementById("greeting").innerHTML = "Guten Mittag Tobias!";
     document.getElementById("icon").src ="images/sun.png"
   }
